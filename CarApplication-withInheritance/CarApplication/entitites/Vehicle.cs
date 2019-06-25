@@ -13,7 +13,12 @@ namespace CarApplication.entitites
         public string Colour;
         public string Type;
 
-
+        public decimal Price=100;
+        
+    public virtual decimal CalculatePrice()
+        {
+            return Price;
+        }
 
 
 

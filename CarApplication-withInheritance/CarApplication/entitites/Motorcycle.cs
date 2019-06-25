@@ -14,6 +14,10 @@ namespace CarApplication.entitites
             Type = "Motorcycle";
         }
 
+        public override decimal CalculatePrice()
+        {
+            return (Price * 1.1m);
+        }
 
 
     }

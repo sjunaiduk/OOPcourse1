@@ -53,7 +53,6 @@ namespace CarApplication
             }
 
 
-
             myVehicle.Make = make;
             myVehicle.Colour = colour;
             myVehicle.Model = model;
@@ -68,8 +67,8 @@ namespace CarApplication
             listBoxVehicles.Items.Clear();
             foreach(Vehicle o in VEHICLES)
             {
-        
-                    string text = o.Make+" "+o.Model+" "+o.Type+"  is of color "+ o.Colour;
+                   
+                    string text = o.CalculatePrice()+ " "+o.Make+" "+o.Model+" "+o.Type+"  is of color "+ o.Colour;
                     listBoxVehicles.Items.Add(text);
            
             }
